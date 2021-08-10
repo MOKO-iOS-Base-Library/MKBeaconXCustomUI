@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MKBeaconXCustomUI_Example' do
+  pod 'MKBeaconXCustomUI', :path => '../'
+
+  target 'MKBeaconXCustomUI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
