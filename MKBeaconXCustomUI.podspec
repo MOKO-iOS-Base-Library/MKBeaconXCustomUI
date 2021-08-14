@@ -94,7 +94,7 @@ TODO: Add long description of the pod here.
       ss.subspec 'FrameTypePickView' do |sss|
         sss.source_files = 'MKBeaconXCustomUI/Classes/SlotConfig/FrameTypePickView/**'
         
-        sss.dependency 'MKBeaconXCustomUI/SlotConfig/Protocol'
+        sss.dependency 'MKBeaconXCustomUI/Defines'
       end
       
       ss.subspec 'SlotConfigCell' do |sss|
