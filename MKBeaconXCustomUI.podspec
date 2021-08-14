@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBeaconXCustomUI'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'BXP系列app的组件库'
 
 # This description is used to generate tags and improve search results.
@@ -29,8 +29,6 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
-
-  s.source_files = 'MKBeaconXCustomUI/Classes/**/*'
   
   s.resource_bundles = {
     'MKBeaconXCustomUI' => ['MKBeaconXCustomUI/Assets/*.png']
@@ -55,6 +53,9 @@ TODO: Add long description of the pod here.
     end
     
     ss.subspec 'ScanCell' do |sss|
+      sss.subspec 'ScanInfoCell' do |ssss|
+        ssss.source_files = 'MKBeaconXCustomUI/Classes/ScanUI/ScanCell/ScanInfoCell/**'
+      end
       sss.subspec 'ScanBeaconCell' do |ssss|
         ssss.source_files = 'MKBeaconXCustomUI/Classes/ScanUI/ScanCell/ScanBeaconCell/**'
       end
@@ -134,6 +135,16 @@ TODO: Add long description of the pod here.
       
   end
   
+  s.subspec 'DeviceInfoPage' do |ss|
+    ss.subspec 'Controller' do |sss|
+      sss.source_files = 'MKBeaconXCustomUI/Classes/DeviceInfoPage/Controller/**'
+      
+      sss.dependency 'MKBeaconXCustomUI/DeviceInfoPage/Protocol'
+    end
+    ss.subspec 'Protocol' do |sss|
+      sss.source_files = 'MKBeaconXCustomUI/Classes/DeviceInfoPage/Protocol/**'
+    end
+  end
   
   s.dependency 'MKBaseModuleLibrary'
   s.dependency 'MKCustomUIModule'

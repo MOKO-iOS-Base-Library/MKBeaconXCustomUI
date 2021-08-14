@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, MKBXTriggerTapViewType) {
 
 @interface MKBXTriggerTapViewModel : NSObject
 
-/// 0:Always advertise,1:Start advertising for a while,2:Stop advertising for a while
+/// 0:Start and keep advertising,1:Start advertising for,2:Stop advertising for
 @property (nonatomic, assign)NSInteger index;
 
 @property (nonatomic, assign)MKBXTriggerTapViewType viewType;
@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, MKBXTriggerTapViewType) {
 @protocol MKBXTriggerTapViewDelegate <NSObject>
 
 /// 用户选择了触发方式
-/// @param index 0:Always advertise,1:Start advertising for a while,2:Stop advertising for a while
+/// @param index 0:Start and keep advertising,1:Start advertising for,2:Stop advertising for
 /// @param viewType 当前触发回调的view类型
 - (void)mk_bx_triggerTapViewIndexChanged:(NSInteger)index viewType:(MKBXTriggerTapViewType)viewType;
 

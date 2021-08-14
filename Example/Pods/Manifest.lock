@@ -40,7 +40,163 @@ PODS:
   - MKBaseModuleLibrary/Tools/MKClassInfo (1.1.2)
   - MKBaseModuleLibrary/Tools/MKDateFormatter (1.1.2)
   - MKBaseModuleLibrary/Tools/MKModuleManager (1.1.2)
-  - MKBeaconXCustomUI (0.0.1):
+  - MKBeaconXCustomUI (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/Defines (= 0.0.2)
+    - MKBeaconXCustomUI/DeviceInfoPage (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI (= 0.0.2)
+    - MKBeaconXCustomUI/SlotAdopter (= 0.0.2)
+    - MKBeaconXCustomUI/SlotConfig (= 0.0.2)
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/Defines (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/DeviceInfoPage (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/DeviceInfoPage/Controller (= 0.0.2)
+    - MKBeaconXCustomUI/DeviceInfoPage/Protocol (= 0.0.2)
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/DeviceInfoPage/Controller (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/DeviceInfoPage/Protocol
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/DeviceInfoPage/Protocol (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/ScanUI/Adopter (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanCell (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanFilterView (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanSearchButton (= 0.0.2)
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/Adopter (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/ScanUI/ScanCell
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/ScanUI/ScanCell/ScanBeaconCell (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanCell/ScanHTCell (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanCell/ScanInfoCell (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanCell/ScanThreeASensorCell (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanCell/ScanTLMCell (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanCell/ScanUIDCell (= 0.0.2)
+    - MKBeaconXCustomUI/ScanUI/ScanCell/ScanURLCell (= 0.0.2)
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanCell/ScanBeaconCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanCell/ScanHTCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanCell/ScanInfoCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanCell/ScanThreeASensorCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanCell/ScanTLMCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanCell/ScanUIDCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanCell/ScanURLCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanFilterView (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/ScanUI/ScanSearchButton (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotAdopter (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/Defines
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/SlotConfig/FrameTypePickView (= 0.0.2)
+    - MKBeaconXCustomUI/SlotConfig/Protocol (= 0.0.2)
+    - MKBeaconXCustomUI/SlotConfig/SlotConfigCell (= 0.0.2)
+    - MKBeaconXCustomUI/SlotConfig/TriggerCell (= 0.0.2)
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/FrameTypePickView (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/Defines
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/Protocol (0.0.2):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/SlotConfigCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/SlotAdopter
+    - MKBeaconXCustomUI/SlotConfig/Protocol
+    - MKBeaconXCustomUI/SlotConfig/SlotConfigCell/BeaconCell (= 0.0.2)
+    - MKBeaconXCustomUI/SlotConfig/SlotConfigCell/DeviceInfoCell (= 0.0.2)
+    - MKBeaconXCustomUI/SlotConfig/SlotConfigCell/UIDCell (= 0.0.2)
+    - MKBeaconXCustomUI/SlotConfig/SlotConfigCell/URLCell (= 0.0.2)
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/SlotConfigCell/BeaconCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/SlotAdopter
+    - MKBeaconXCustomUI/SlotConfig/Protocol
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/SlotConfigCell/DeviceInfoCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/SlotAdopter
+    - MKBeaconXCustomUI/SlotConfig/Protocol
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/SlotConfigCell/UIDCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/SlotAdopter
+    - MKBeaconXCustomUI/SlotConfig/Protocol
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/SlotConfigCell/URLCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/SlotAdopter
+    - MKBeaconXCustomUI/SlotConfig/Protocol
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/TriggerCell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/SlotConfig/TriggerCell/Cell (= 0.0.2)
+    - MKBeaconXCustomUI/SlotConfig/TriggerCell/TriggerView (= 0.0.2)
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/TriggerCell/Cell (0.0.2):
+    - MKBaseModuleLibrary
+    - MKBeaconXCustomUI/SlotConfig/Protocol
+    - MKBeaconXCustomUI/SlotConfig/TriggerCell/TriggerView
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKBeaconXCustomUI/SlotConfig/TriggerCell/TriggerView (0.0.2):
     - MKBaseModuleLibrary
     - MKCustomUIModule
     - MLInputDodger
@@ -351,7 +507,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
   MKBaseModuleLibrary: 57fc476a28a2936823037a0183743d8874c0cde6
-  MKBeaconXCustomUI: 8b1f6ec6412316429016ccc1c10b9f3cd3dca37b
+  MKBeaconXCustomUI: 4755da69daedfbb5a8ea7c4e5941d74d5e84f5e7
   MKCustomUIModule: 8259f4609f603d8cc7bb337f510f8075f79a75e4
   MLInputDodger: 79a0e420a80d0d3bba122bf2639603cc76609ba8
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196

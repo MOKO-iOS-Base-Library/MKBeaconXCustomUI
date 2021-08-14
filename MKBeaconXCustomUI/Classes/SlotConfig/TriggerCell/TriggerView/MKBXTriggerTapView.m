@@ -239,8 +239,8 @@
     self.stopField.text = _dataModel.stopValue;
     [self updateSelectedIcon];
     [self updateNoteMsg];
-    self.msgLabel2.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Stop advertising after a static period of time" : @"Start advertising for a while";
-    self.msgLabel4.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Start advertising after a static period of time" : @"Stop advertising for a while";
+    self.msgLabel2.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Stop advertising after a static period of time" : @"Start advertising for";
+    self.msgLabel4.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Start advertising after a static period of time" : @"Stop advertising for";
     [self setNeedsLayout];
 }
 
@@ -313,7 +313,7 @@
 - (UILabel *)msgLabel1 {
     if (!_msgLabel1) {
         _msgLabel1 = [self createMsgLabel:MKFont(11.f)];
-        _msgLabel1.text = @"Always advertise";
+        _msgLabel1.text = @"Start and keep advertising";
         [_msgLabel1 addTapAction:self selector:@selector(msgLabel1Pressed)];
     }
     return _msgLabel1;

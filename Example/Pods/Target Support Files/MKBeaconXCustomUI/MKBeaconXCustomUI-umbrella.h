@@ -11,11 +11,15 @@
 #endif
 
 #import "MKBXEnumerateDefine.h"
+#import "MKBXDeviceInfoController.h"
+#import "MKBXDeviceInfoDataProtocol.h"
 #import "MKBXScanPageAdopter.h"
 #import "MKBXScanBeaconCell.h"
 #import "MKBXScanHTCell.h"
-#import "MKBXScanThreeASensorCell.h"
+#import "MKBXScanInfoCell.h"
+#import "MKBXScanInfoCellProtocol.h"
 #import "MKBXScanTLMCell.h"
+#import "MKBXScanThreeASensorCell.h"
 #import "MKBXScanUIDCell.h"
 #import "MKBXScanURLCell.h"
 #import "MKBXScanFilterView.h"
