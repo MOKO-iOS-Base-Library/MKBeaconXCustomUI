@@ -1,6 +1,6 @@
 {
   "name": "MKBeaconXCustomUI",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "summary": "BXP系列app的组件库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKBeaconXCustomUI",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKBeaconXCustomUI.git",
-    "tag": "0.0.2"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "12.0"
@@ -149,25 +149,56 @@
           ]
         },
         {
+          "name": "TriggerView",
+          "source_files": "MKBeaconXCustomUI/Classes/SlotConfig/TriggerView/**"
+        },
+        {
           "name": "TriggerCell",
-          "subspecs": [
-            {
-              "name": "TriggerView",
-              "source_files": "MKBeaconXCustomUI/Classes/SlotConfig/TriggerCell/TriggerView/**"
-            },
-            {
-              "name": "Cell",
-              "source_files": "MKBeaconXCustomUI/Classes/SlotConfig/TriggerCell/Cell/**",
-              "dependencies": {
-                "MKBeaconXCustomUI/SlotConfig/Protocol": [
+          "source_files": "MKBeaconXCustomUI/Classes/SlotConfig/TriggerCell/**",
+          "dependencies": {
+            "MKBeaconXCustomUI/SlotConfig/TriggerView": [
 
-                ],
-                "MKBeaconXCustomUI/SlotConfig/TriggerCell/TriggerView": [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "QuickSwitchCell",
+      "source_files": "MKBeaconXCustomUI/Classes/QuickSwitchCell/**"
+    },
+    {
+      "name": "DFUPage",
+      "dependencies": {
+        "iOSDFULibrary": [
 
-                ]
-              }
-            }
-          ]
+        ]
+      },
+      "subspecs": [
+        {
+          "name": "Controller",
+          "source_files": "MKBeaconXCustomUI/Classes/DFUPage/Controller/**",
+          "dependencies": {
+            "MKBeaconXCustomUI/DFUPage/Model": [
+
+            ],
+            "MKBeaconXCustomUI/DFUPage/Protocol": [
+
+            ]
+          }
+        },
+        {
+          "name": "Model",
+          "source_files": "MKBeaconXCustomUI/Classes/DFUPage/Model/**",
+          "dependencies": {
+            "MKBeaconXCustomUI/DFUPage/Protocol": [
+
+            ]
+          }
+        },
+        {
+          "name": "Protocol",
+          "source_files": "MKBeaconXCustomUI/Classes/DFUPage/Protocol/**"
         }
       ]
     },

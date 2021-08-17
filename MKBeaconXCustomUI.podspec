@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBeaconXCustomUI'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'BXP系列app的组件库'
 
 # This description is used to generate tags and improve search results.
@@ -117,22 +117,39 @@ TODO: Add long description of the pod here.
         sss.dependency 'MKBeaconXCustomUI/SlotConfig/Protocol'
       end
       
-      ss.subspec 'TriggerCell' do |sss|
-        
-        sss.subspec 'TriggerView' do |ssss|
-          ssss.source_files = 'MKBeaconXCustomUI/Classes/SlotConfig/TriggerCell/TriggerView/**'
-        end
-        
-        sss.subspec 'Cell' do |ssss|
-          ssss.source_files = 'MKBeaconXCustomUI/Classes/SlotConfig/TriggerCell/Cell/**'
-          
-          ssss.dependency 'MKBeaconXCustomUI/SlotConfig/Protocol'
-          
-          ssss.dependency 'MKBeaconXCustomUI/SlotConfig/TriggerCell/TriggerView'
-        end
-        
+      ss.subspec 'TriggerView' do |sss|
+        sss.source_files = 'MKBeaconXCustomUI/Classes/SlotConfig/TriggerView/**'
       end
       
+      ss.subspec 'TriggerCell' do |sss|
+        sss.source_files = 'MKBeaconXCustomUI/Classes/SlotConfig/TriggerCell/**'
+        
+        sss.dependency 'MKBeaconXCustomUI/SlotConfig/TriggerView'
+      end
+      
+  end
+  
+  s.subspec 'QuickSwitchCell' do |ss|
+    ss.source_files = 'MKBeaconXCustomUI/Classes/QuickSwitchCell/**'
+  end
+  
+  s.subspec 'DFUPage' do |ss|
+      ss.subspec 'Controller' do |sss|
+        sss.source_files = 'MKBeaconXCustomUI/Classes/DFUPage/Controller/**'
+        
+        sss.dependency 'MKBeaconXCustomUI/DFUPage/Model'
+        sss.dependency 'MKBeaconXCustomUI/DFUPage/Protocol'
+      end
+      ss.subspec 'Model' do |sss|
+        sss.source_files = 'MKBeaconXCustomUI/Classes/DFUPage/Model/**'
+        
+        sss.dependency 'MKBeaconXCustomUI/DFUPage/Protocol'
+      end
+      ss.subspec 'Protocol' do |sss|
+        sss.source_files = 'MKBeaconXCustomUI/Classes/DFUPage/Protocol/**'
+      end
+      
+      ss.dependency 'iOSDFULibrary'
   end
   
   s.subspec 'DeviceInfoPage' do |ss|
