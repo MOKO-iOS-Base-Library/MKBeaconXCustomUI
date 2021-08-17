@@ -239,8 +239,8 @@
     self.stopField.text = _dataModel.stopValue;
     [self updateSelectedIcon];
     [self updateNoteMsg];
-    self.msgLabel2.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Stop advertising after a static period of time" : @"Start advertising for";
-    self.msgLabel4.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Start advertising after a static period of time" : @"Stop advertising for";
+    self.msgLabel2.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Start advertising after device keep static for" : @"Start advertising for";
+    self.msgLabel4.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Stop advertising after device keep static for" : @"Stop advertising for";
     [self setNeedsLayout];
 }
 
