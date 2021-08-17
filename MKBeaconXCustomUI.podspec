@@ -125,6 +125,7 @@ TODO: Add long description of the pod here.
         sss.source_files = 'MKBeaconXCustomUI/Classes/SlotConfig/TriggerCell/**'
         
         sss.dependency 'MKBeaconXCustomUI/SlotConfig/TriggerView'
+        sss.dependency 'MKBeaconXCustomUI/SlotConfig/Protocol'
       end
       
   end
