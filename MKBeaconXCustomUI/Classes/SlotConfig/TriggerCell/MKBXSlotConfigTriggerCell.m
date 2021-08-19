@@ -64,6 +64,10 @@ MKBXTriggerTapViewDelegate>
 
 @property (nonatomic, strong)MKBXTriggerTapViewModel *movesViewModel;
 
+@property (nonatomic, strong)MKBXTriggerTapView *lightDetectedView;
+
+@property (nonatomic, strong)MKBXTriggerTapViewModel *lightDetectedViewModel;
+
 @property (nonatomic, assign)NSInteger index;
 
 @end
@@ -90,6 +94,7 @@ MKBXTriggerTapViewDelegate>
         [self.contentView addSubview:self.doubleTapView];
         [self.contentView addSubview:self.tripleTapView];
         [self.contentView addSubview:self.movesView];
+        [self.contentView addSubview:self.lightDetectedView];
         [self.triggerTypeLabel setHidden:YES];
         [self.triggerLabel setHidden:YES];
         [self.doubleTapView setHidden:YES];
@@ -97,6 +102,7 @@ MKBXTriggerTapViewDelegate>
         [self.humidityView setHidden:YES];
         [self.tripleTapView setHidden:YES];
         [self.movesView setHidden:YES];
+        [self.lightDetectedView setHidden:YES];
     }
     return self;
 }
@@ -149,6 +155,9 @@ MKBXTriggerTapViewDelegate>
         make.edges.mas_equalTo(self.temperView);
     }];
     [self.movesView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.temperView);
+    }];
+    [self.lightDetectedView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.temperView);
     }];
 }
@@ -205,6 +214,24 @@ MKBXTriggerTapViewDelegate>
             return [self fetchTriggerTapViewData:self.movesView];
         }
     }
+    if ([self.dataModel.deviceType isEqualToString:@"04"]) {
+        //带光感
+        if (self.index == 2) {
+            //Ambient light detected
+            return [self fetchTriggerTapViewData:self.lightDetectedView];
+        }
+    }
+    if ([self.dataModel.deviceType isEqualToString:@"05"]) {
+        //带LIS3DH和光感
+        if (self.index == 2) {
+            //Device moves
+            return [self fetchTriggerTapViewData:self.movesView];
+        }
+        if (self.index == 3) {
+            //Ambient light detected
+            return [self fetchTriggerTapViewData:self.lightDetectedView];
+        }
+    }
     return @{
         @"msg":@"Params Error",
         @"result":@{},
@@ -250,6 +277,11 @@ MKBXTriggerTapViewDelegate>
         self.movesViewModel.index = index;
         return;
     }
+    if (viewType == MKBXTriggerTapViewAmbientLightDetected) {
+        //光感
+        self.lightDetectedViewModel.index = index;
+        return;
+    }
 }
 
 /// index=1的时候，输入框的值
@@ -269,6 +301,11 @@ MKBXTriggerTapViewDelegate>
         self.movesViewModel.startValue = startValue;
         return;
     }
+    if (viewType == MKBXTriggerTapViewAmbientLightDetected) {
+        //光感
+        self.lightDetectedViewModel.startValue = startValue;
+        return;
+    }
 }
 
 /// index=2的时候，输入框的值
@@ -286,6 +323,11 @@ MKBXTriggerTapViewDelegate>
     if (viewType == MKBXTriggerTapViewDeviceMoves) {
         //移动触发
         self.movesViewModel.stopValue = stopValue;
+        return;
+    }
+    if (viewType == MKBXTriggerTapViewAmbientLightDetected) {
+        //光感
+        self.lightDetectedViewModel.stopValue = stopValue;
         return;
     }
 }
@@ -338,6 +380,7 @@ MKBXTriggerTapViewDelegate>
     [self.humidityView setHidden:YES];
     [self.tripleTapView setHidden:YES];
     [self.movesView setHidden:YES];
+    [self.lightDetectedView setHidden:YES];
 }
 
 - (void)updateIndexValue {
@@ -352,6 +395,29 @@ MKBXTriggerTapViewDelegate>
     if ([self.dataModel.type isEqualToString:@"04"] && ValidDict(self.dataModel.conditions)) {
         //三击
         self.index = 1;
+        return;
+    }
+    if ([self.dataModel.deviceType isEqualToString:@"04"]) {
+        //仅带光感,@"Press button twice",@"Press button three times",@"Ambient light detected"
+        if ([self.dataModel.type isEqualToString:@"06"] && ValidDict(self.dataModel.conditions)) {
+            //光感触发
+            self.index = 2;
+            return;
+        }
+        return;
+    }
+    if ([self.dataModel.deviceType isEqualToString:@"05"]) {
+        //带光感和LIS3DH3轴加速度计,@"Press button twice",@"Press button three times",@"Device moves",@"Ambient light detected"
+        if ([self.dataModel.type isEqualToString:@"05"] && ValidDict(self.dataModel.conditions)) {
+            //移动触发
+            self.index = 2;
+            return;
+        }
+        if ([self.dataModel.type isEqualToString:@"06"] && ValidDict(self.dataModel.conditions)) {
+            //光感触发
+            self.index = 3;
+            return;
+        }
         return;
     }
     if ([self.dataModel.deviceType isEqualToString:@"01"]) {
@@ -387,6 +453,7 @@ MKBXTriggerTapViewDelegate>
         }
         return;
     }
+    
 }
 
 - (void)setupUI {
@@ -399,6 +466,7 @@ MKBXTriggerTapViewDelegate>
         [self.humidityView setHidden:YES];
         [self.tripleTapView setHidden:YES];
         [self.movesView setHidden:YES];
+        [self.lightDetectedView setHidden:YES];
         NSString *startValue = @"30";
         NSString *stopValue = @"30";
         NSInteger tempIndex = 0;
@@ -431,6 +499,7 @@ MKBXTriggerTapViewDelegate>
         [self.humidityView setHidden:YES];
         [self.tripleTapView setHidden:NO];
         [self.movesView setHidden:YES];
+        [self.lightDetectedView setHidden:YES];
         
         NSString *startValue = @"30";
         NSString *stopValue = @"30";
@@ -471,6 +540,7 @@ MKBXTriggerTapViewDelegate>
             [self.humidityView setHidden:YES];
             [self.tripleTapView setHidden:YES];
             [self.movesView setHidden:NO];
+            [self.lightDetectedView setHidden:YES];
             
             NSString *startValue = @"30";
             NSString *stopValue = @"30";
@@ -511,6 +581,7 @@ MKBXTriggerTapViewDelegate>
             [self.humidityView setHidden:YES];
             [self.tripleTapView setHidden:YES];
             [self.movesView setHidden:YES];
+            [self.lightDetectedView setHidden:YES];
             
             self.temperViewModel.sliderValue = [self.dataModel.conditions[@"temperature"] floatValue];
             self.temperViewModel.above = (self.index == 2);
@@ -526,6 +597,7 @@ MKBXTriggerTapViewDelegate>
             [self.humidityView setHidden:NO];
             [self.tripleTapView setHidden:YES];
             [self.movesView setHidden:YES];
+            [self.lightDetectedView setHidden:YES];
             
             self.humidityViewModel.sliderValue = [self.dataModel.conditions[@"humidity"] floatValue];
             self.humidityViewModel.above = (self.index == 4);
@@ -544,6 +616,7 @@ MKBXTriggerTapViewDelegate>
             [self.humidityView setHidden:YES];
             [self.tripleTapView setHidden:YES];
             [self.movesView setHidden:NO];
+            [self.lightDetectedView setHidden:YES];
             
             NSString *startValue = @"30";
             NSString *stopValue = @"30";
@@ -573,6 +646,118 @@ MKBXTriggerTapViewDelegate>
         }
         return;
     }
+    if ([self.dataModel.deviceType isEqualToString:@"04"]) {
+        //带光感
+        if (self.index == 2) {
+            //Ambient light detected
+            [self.doubleTapView setHidden:YES];
+            [self.temperView setHidden:YES];
+            [self.humidityView setHidden:YES];
+            [self.tripleTapView setHidden:YES];
+            [self.movesView setHidden:YES];
+            [self.lightDetectedView setHidden:NO];
+            
+            NSString *startValue = @"30";
+            NSString *stopValue = @"30";
+            NSInteger tempIndex = 0;
+            
+            if (ValidDict(self.dataModel.conditions)) {
+                BOOL start = [self.dataModel.conditions[@"start"] boolValue];
+                if ([self.dataModel.conditions[@"time"] integerValue] == 0) {
+                    if (start) {
+                        tempIndex = 0;
+                    }
+                }else {
+                    if (start) {
+                        tempIndex = 1;
+                        startValue = self.dataModel.conditions[@"time"];
+                    }else {
+                        tempIndex = 2;
+                        stopValue = self.dataModel.conditions[@"time"];
+                    }
+                }
+            }
+            self.lightDetectedViewModel.index = tempIndex;
+            self.lightDetectedViewModel.startValue = startValue;
+            self.lightDetectedViewModel.stopValue = stopValue;
+            self.lightDetectedView.dataModel = self.lightDetectedViewModel;
+            return;
+        }
+        return;
+    }
+    if ([self.dataModel.deviceType isEqualToString:@"05"]) {
+        //光感和三轴加速度
+        if (self.index == 2) {
+            //Device moves
+            [self.doubleTapView setHidden:YES];
+            [self.temperView setHidden:YES];
+            [self.humidityView setHidden:YES];
+            [self.tripleTapView setHidden:YES];
+            [self.movesView setHidden:NO];
+            [self.lightDetectedView setHidden:YES];
+            
+            NSString *startValue = @"30";
+            NSString *stopValue = @"30";
+            NSInteger tempIndex = 0;
+            
+            if (ValidDict(self.dataModel.conditions)) {
+                BOOL start = [self.dataModel.conditions[@"start"] boolValue];
+                if ([self.dataModel.conditions[@"time"] integerValue] == 0) {
+                    if (start) {
+                        tempIndex = 0;
+                    }
+                }else {
+                    if (start) {
+                        tempIndex = 1;
+                        startValue = self.dataModel.conditions[@"time"];
+                    }else {
+                        tempIndex = 2;
+                        stopValue = self.dataModel.conditions[@"time"];
+                    }
+                }
+            }
+            self.movesViewModel.index = tempIndex;
+            self.movesViewModel.startValue = startValue;
+            self.movesViewModel.stopValue = stopValue;
+            self.movesView.dataModel = self.movesViewModel;
+            return;
+        }
+        if (self.index == 3) {
+            //Ambient light detected
+            [self.doubleTapView setHidden:YES];
+            [self.temperView setHidden:YES];
+            [self.humidityView setHidden:YES];
+            [self.tripleTapView setHidden:YES];
+            [self.movesView setHidden:YES];
+            [self.lightDetectedView setHidden:NO];
+            
+            NSString *startValue = @"30";
+            NSString *stopValue = @"30";
+            NSInteger tempIndex = 0;
+            
+            if (ValidDict(self.dataModel.conditions)) {
+                BOOL start = [self.dataModel.conditions[@"start"] boolValue];
+                if ([self.dataModel.conditions[@"time"] integerValue] == 0) {
+                    if (start) {
+                        tempIndex = 0;
+                    }
+                }else {
+                    if (start) {
+                        tempIndex = 1;
+                        startValue = self.dataModel.conditions[@"time"];
+                    }else {
+                        tempIndex = 2;
+                        stopValue = self.dataModel.conditions[@"time"];
+                    }
+                }
+            }
+            self.lightDetectedViewModel.index = tempIndex;
+            self.lightDetectedViewModel.startValue = startValue;
+            self.lightDetectedViewModel.stopValue = stopValue;
+            self.lightDetectedView.dataModel = self.lightDetectedViewModel;
+            return;
+        }
+    }
 }
 
 - (NSArray *)triggerTypeList {
@@ -587,6 +772,14 @@ MKBXTriggerTapViewDelegate>
     if ([self.dataModel.deviceType isEqualToString:@"03"]) {
         //同时带有LIS3DH及SHT3X传感器
         return @[@"Press button twice",@"Press button three times",@"Temperature above",@"Temperature below",@"Humidity above",@"Humidity below",@"Device moves"];
+    }
+    if ([self.dataModel.deviceType isEqualToString:@"04"]) {
+        //带光感
+        return @[@"Press button twice",@"Press button three times",@"Ambient light detected"];
+    }
+    if ([self.dataModel.deviceType isEqualToString:@"05"]) {
+        //同时带有LIS3DH3轴加速度计和光感
+        return @[@"Press button twice",@"Press button three times",@"Device moves",@"Ambient light detected"];
     }
     //不带传感器
     return @[@"Press button twice",@"Press button three times"];
@@ -652,6 +845,9 @@ MKBXTriggerTapViewDelegate>
     }else if (tapView == self.movesView) {
         triggerType = @"05";
         tempModel = self.movesViewModel;
+    }else if (tapView == self.lightDetectedView) {
+        triggerType = @"06";
+        tempModel = self.lightDetectedViewModel;
     }
     if ((tempModel.index == 1 && (!ValidStr(tempModel.startValue) || [tempModel.startValue integerValue] < 1 || [tempModel.startValue integerValue] > 65535))
         || (tempModel.index == 2 && (!ValidStr(tempModel.stopValue) || [tempModel.stopValue integerValue] < 1 || [tempModel.stopValue integerValue] > 65535))) {
@@ -815,6 +1011,22 @@ MKBXTriggerTapViewDelegate>
         _movesViewModel.viewType = MKBXTriggerTapViewDeviceMoves;
     }
     return _movesViewModel;
+}
+
+- (MKBXTriggerTapView *)lightDetectedView {
+    if (!_lightDetectedView) {
+        _lightDetectedView = [[MKBXTriggerTapView alloc] init];
+        _lightDetectedView.delegate = self;
+    }
+    return _lightDetectedView;
+}
+
+- (MKBXTriggerTapViewModel *)lightDetectedViewModel {
+    if (!_lightDetectedViewModel) {
+        _lightDetectedViewModel = [[MKBXTriggerTapViewModel alloc] init];
+        _lightDetectedViewModel.viewType = MKBXTriggerTapViewAmbientLightDetected;
+    }
+    return _lightDetectedViewModel;
 }
 
 @end

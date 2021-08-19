@@ -239,8 +239,16 @@
     self.stopField.text = _dataModel.stopValue;
     [self updateSelectedIcon];
     [self updateNoteMsg];
-    self.msgLabel2.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Start advertising after device keep static for" : @"Start advertising for";
-    self.msgLabel4.text = (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) ? @"Stop advertising after device keep static for" : @"Stop advertising for";
+    if (_dataModel.viewType == MKBXTriggerTapViewDeviceMoves) {
+        self.msgLabel2.text = @"Start advertising after device keep static for";
+        self.msgLabel4.text = @"Stop advertising after device keep static for";
+    }else if (_dataModel.viewType == MKBXTriggerTapViewAmbientLightDetected) {
+        self.msgLabel2.text = @"Start advertising after ambient light continuously detected for";
+        self.msgLabel4.text = @"Stop advertising after ambient light continuously detected for";
+    }else {
+        self.msgLabel2.text = @"Start advertising for";
+        self.msgLabel4.text = @"Stop advertising for";
+    }
     [self setNeedsLayout];
 }
 
@@ -256,6 +264,21 @@
         }
         if (self.index == 2) {
             self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start to broadcast after a static period of %@s and it stops broadcasting again once a movement occurred.",self.stopField.text];
+        }
+        [self setNeedsLayout];
+        return;
+    }
+    if (self.dataModel.viewType == MKBXTriggerTapViewAmbientLightDetected) {
+        //光感
+        if (self.index == 0) {
+            self.noteMsgLabel.text = @"*The Beacon will always broadcast after ambient light detected.";
+            return;
+        }
+        if (self.index == 1) {
+            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start to broadcast after device detected ambient light continuously for %@s.",self.startField.text];
+        }
+        if (self.index == 2) {
+            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will stop to broadcast after device detected ambient light continuously for %@s.",self.stopField.text];
         }
         [self setNeedsLayout];
         return;
