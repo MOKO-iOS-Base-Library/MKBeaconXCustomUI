@@ -38,7 +38,7 @@ MKBXTriggerTapViewDelegate>
 
 @property (nonatomic, strong)UILabel *msgLabel;
 
-@property (nonatomic, strong)UISwitch *switchView;
+@property (nonatomic, strong)UIButton *switchButton;
 
 @property (nonatomic, strong)UILabel *triggerTypeLabel;
 
@@ -86,7 +86,7 @@ MKBXTriggerTapViewDelegate>
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self.contentView addSubview:self.leftIcon];
         [self.contentView addSubview:self.msgLabel];
-        [self.contentView addSubview:self.switchView];
+        [self.contentView addSubview:self.switchButton];
         [self.contentView addSubview:self.triggerLabel];
         [self.contentView addSubview:self.triggerTypeLabel];
         [self.contentView addSubview:self.temperView];
@@ -117,13 +117,13 @@ MKBXTriggerTapViewDelegate>
     }];
     [self.msgLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.leftIcon.mas_right).mas_offset(5.f);
-        make.right.mas_equalTo(self.switchView.mas_left).mas_offset(-5.f);
+        make.right.mas_equalTo(self.switchButton.mas_left).mas_offset(-5.f);
         make.centerY.mas_equalTo(self.leftIcon.mas_centerY);
         make.height.mas_equalTo(MKFont(15.f).lineHeight);
     }];
-    [self.switchView mas_remakeConstraints:^(MASConstraintMaker *make) {
+    [self.switchButton mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-15.f);
-        make.width.mas_equalTo(51.f);
+        make.width.mas_equalTo(40.f);
         make.top.mas_equalTo(10.f);
         make.height.mas_equalTo(30.f);
     }];
@@ -136,7 +136,7 @@ MKBXTriggerTapViewDelegate>
     [self.triggerLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.triggerTypeLabel.mas_right).mas_offset(10.f);
         make.right.mas_equalTo(-15.f);
-        make.top.mas_equalTo(self.switchView.mas_bottom).mas_offset(10.f);
+        make.top.mas_equalTo(self.switchButton.mas_bottom).mas_offset(10.f);
         make.height.mas_equalTo(25.f);
     }];
     [self.temperView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -164,7 +164,7 @@ MKBXTriggerTapViewDelegate>
 
 #pragma mark - MKBXSlotConfigCellProtocol
 - (NSDictionary *)mk_bx_slotConfigCell_params {
-    if (!self.switchView.isOn) {
+    if (!self.switchButton.selected) {
         //关闭触发
         return @{
             @"msg":@"",
@@ -333,9 +333,11 @@ MKBXTriggerTapViewDelegate>
 }
 
 #pragma mark - event method
-- (void)switchViewValueChanged {
+- (void)switchButtonPressed {
+    self.switchButton.selected = !self.switchButton.selected;
+    [self updateSwitchButtonIcon];
     if ([self.delegate respondsToSelector:@selector(mk_bx_triggerSwitchStatusChanged:)]) {
-        [self.delegate mk_bx_triggerSwitchStatusChanged:self.switchView.isOn];
+        [self.delegate mk_bx_triggerSwitchStatusChanged:self.switchButton.selected];
     }
 }
 
@@ -357,15 +359,15 @@ MKBXTriggerTapViewDelegate>
     if (!_dataModel || ![_dataModel isKindOfClass:MKBXSlotConfigTriggerCellModel.class]) {
         return;
     }
-    [self.switchView setOn:_dataModel.isOn];
+    self.switchButton.selected = _dataModel.isOn;
+    [self updateSwitchButtonIcon];
     [self updateIndexValue];
     [self reloadSubViews];
 }
 
 #pragma mark - private method
 - (void)reloadSubViews {
-    BOOL isOn = self.switchView.isOn;
-    if (isOn) {
+    if (self.switchButton.selected) {
         //开关打开
         [self.triggerTypeLabel setHidden:NO];
         [self.triggerLabel setHidden:NO];
@@ -760,6 +762,11 @@ MKBXTriggerTapViewDelegate>
     }
 }
 
+- (void)updateSwitchButtonIcon {
+    UIImage *icon = (self.switchButton.selected ? LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchSelectedIcon.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchUnselectedIcon.png"));
+    [self.switchButton setImage:icon forState:UIControlStateNormal];
+}
+
 - (NSArray *)triggerTypeList {
     if ([self.dataModel.deviceType isEqualToString:@"01"]) {
         //带LIS3DH3轴加速度计
@@ -902,14 +909,15 @@ MKBXTriggerTapViewDelegate>
     return _msgLabel;
 }
 
-- (UISwitch *)switchView {
-    if (!_switchView) {
-        _switchView = [[UISwitch alloc] init];
-        [_switchView addTarget:self
-                        action:@selector(switchViewValueChanged)
-              forControlEvents:UIControlEventValueChanged];
+- (UIButton *)switchButton {
+    if (!_switchButton) {
+        _switchButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_switchButton setImage:LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchUnselectedIcon.png") forState:UIControlStateNormal];
+        [_switchButton addTarget:self
+                          action:@selector(switchButtonPressed)
+                forControlEvents:UIControlEventTouchUpInside];
     }
-    return _switchView;
+    return _switchButton;
 }
 
 - (UILabel *)triggerTypeLabel {

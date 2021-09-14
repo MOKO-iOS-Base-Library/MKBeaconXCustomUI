@@ -256,14 +256,14 @@
 - (void)updateNoteMsg {
     if (self.dataModel.viewType == MKBXTriggerTapViewDeviceMoves) {
         if (self.index == 0) {
-            self.noteMsgLabel.text = @"*The Beacon will always broadcast once a movement occurred.";
+            self.noteMsgLabel.text = @"*The Beacon will start and keep advertising once a movement occurred.";
             return;
         }
         if (self.index == 1) {
-            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will stop broadcasting after a static period of %@s and it starts to broadcast again once a movement occurred.",self.startField.text];
+            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start advertising after device keep static for %@s and it stops advertising again once a movement occurred.",self.startField.text];
         }
         if (self.index == 2) {
-            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start to broadcast after a static period of %@s and it stops broadcasting again once a movement occurred.",self.stopField.text];
+            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will stop advertising after device keep static for %@s and it starts advertising again once a movement occurred.",self.stopField.text];
         }
         [self setNeedsLayout];
         return;
@@ -285,17 +285,17 @@
     }
     NSString *typeString = (self.dataModel.viewType == MKBXTriggerTapViewTriple) ? @"three times" : @"twice";
     if (self.index == 0) {
-        self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will always broadcast after press the button %@.",typeString];
+        self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start and keep advertising after press the button %@.",typeString];
         [self setNeedsLayout];
         return;
     }
     if (self.index == 1) {
-        self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start to broadcast for %@s after press the button %@.",self.startField.text,typeString];
+        self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start advertising for %@s after press the button %@.",self.startField.text,typeString];
         [self setNeedsLayout];
         return;
     }
     if (self.index == 2) {
-        self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will stop broadcasting for %@s after press the button %@.",self.stopField.text,typeString];
+        self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will stop advertising for %@s after press the button %@.",self.stopField.text,typeString];
         [self setNeedsLayout];
         return;
     }
