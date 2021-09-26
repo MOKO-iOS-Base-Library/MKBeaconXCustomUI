@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBeaconXCustomUI'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'BXP系列app的组件库'
 
 # This description is used to generate tags and improve search results.

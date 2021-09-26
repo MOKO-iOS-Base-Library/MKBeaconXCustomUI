@@ -260,7 +260,7 @@
             return;
         }
         if (self.index == 1) {
-            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start advertising after device keep static for %@s and it stops advertising again once a movement occurred.",self.startField.text];
+            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start advertising after device keep static for %@s and it stops broadcasting again once a movement occurred.",self.startField.text];
         }
         if (self.index == 2) {
             self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will stop advertising after device keep static for %@s and it starts advertising again once a movement occurred.",self.stopField.text];
@@ -271,14 +271,14 @@
     if (self.dataModel.viewType == MKBXTriggerTapViewAmbientLightDetected) {
         //光感
         if (self.index == 0) {
-            self.noteMsgLabel.text = @"*The Beacon will always broadcast after ambient light detected.";
+            self.noteMsgLabel.text = @"*The Beacon will start and keep advertising after ambient light detected.";
             return;
         }
         if (self.index == 1) {
-            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start to broadcast after device detected ambient light continuously for %@s.",self.startField.text];
+            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will start advertising after device detected ambient light continuously for %@s.",self.startField.text];
         }
         if (self.index == 2) {
-            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will stop to broadcast after device detected ambient light continuously for %@s.",self.stopField.text];
+            self.noteMsgLabel.text = [NSString stringWithFormat:@"*The Beacon will stop advertising after device detected ambient light continuously for %@s.",self.stopField.text];
         }
         [self setNeedsLayout];
         return;
