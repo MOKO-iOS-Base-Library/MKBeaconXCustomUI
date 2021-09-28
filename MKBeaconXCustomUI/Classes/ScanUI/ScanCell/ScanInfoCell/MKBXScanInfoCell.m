@@ -127,7 +127,7 @@ static CGFloat const batteryIconHeight = 25.f;
     }];
     [self.rssiLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(offset_X);
-        make.width.mas_equalTo(rssiIconWidth);
+        make.width.mas_equalTo(40.f);
         make.top.mas_equalTo(self.rssiIcon.mas_bottom).mas_offset(2.f);
         make.height.mas_equalTo(MKFont(10.f).lineHeight);
     }];
