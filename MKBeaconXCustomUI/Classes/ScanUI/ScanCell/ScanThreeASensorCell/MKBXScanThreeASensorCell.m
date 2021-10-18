@@ -212,7 +212,10 @@ static CGFloat const leftIconHeight = 7.f;
         self.rawValueLabel.text = [NSString stringWithFormat:@"%@ %@ %@",xValue,yValue,zValue];
     }else {
         //旧版本
-        self.rawValueLabel.text = [NSString stringWithFormat:@"X:%@ Y:%@ Z:%@",[_dataModel.xData uppercaseString],[_dataModel.yData uppercaseString],[_dataModel.zData uppercaseString]];
+        NSString *xValue = [NSString stringWithFormat:@"%@%@",@"0x",[_dataModel.xData uppercaseString]];
+        NSString *yValue = [NSString stringWithFormat:@"%@%@",@"0x",[_dataModel.yData uppercaseString]];
+        NSString *zValue = [NSString stringWithFormat:@"%@%@",@"0x",[_dataModel.zData uppercaseString]];
+        self.rawValueLabel.text = [NSString stringWithFormat:@"X:%@ Y:%@ Z:%@",xValue,yValue,zValue];
     }
     
     [self setNeedsLayout];
