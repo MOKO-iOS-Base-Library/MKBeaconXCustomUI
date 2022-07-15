@@ -1,6 +1,6 @@
 {
   "name": "MKBeaconXCustomUI",
-  "version": "0.0.3",
+  "version": "1.0.5",
   "summary": "BXP系列app的组件库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKBeaconXCustomUI",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKBeaconXCustomUI.git",
-    "tag": "0.0.3"
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "12.0"
@@ -158,6 +158,9 @@
           "dependencies": {
             "MKBeaconXCustomUI/SlotConfig/TriggerView": [
 
+            ],
+            "MKBeaconXCustomUI/SlotConfig/Protocol": [
+
             ]
           }
         }
@@ -166,41 +169,6 @@
     {
       "name": "QuickSwitchCell",
       "source_files": "MKBeaconXCustomUI/Classes/QuickSwitchCell/**"
-    },
-    {
-      "name": "DFUPage",
-      "dependencies": {
-        "iOSDFULibrary": [
-
-        ]
-      },
-      "subspecs": [
-        {
-          "name": "Controller",
-          "source_files": "MKBeaconXCustomUI/Classes/DFUPage/Controller/**",
-          "dependencies": {
-            "MKBeaconXCustomUI/DFUPage/Model": [
-
-            ],
-            "MKBeaconXCustomUI/DFUPage/Protocol": [
-
-            ]
-          }
-        },
-        {
-          "name": "Model",
-          "source_files": "MKBeaconXCustomUI/Classes/DFUPage/Model/**",
-          "dependencies": {
-            "MKBeaconXCustomUI/DFUPage/Protocol": [
-
-            ]
-          }
-        },
-        {
-          "name": "Protocol",
-          "source_files": "MKBeaconXCustomUI/Classes/DFUPage/Protocol/**"
-        }
-      ]
     },
     {
       "name": "DeviceInfoPage",

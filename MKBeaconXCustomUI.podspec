@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBeaconXCustomUI'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'BXP系列app的组件库'
 
 # This description is used to generate tags and improve search results.
@@ -132,25 +132,6 @@ TODO: Add long description of the pod here.
   
   s.subspec 'QuickSwitchCell' do |ss|
     ss.source_files = 'MKBeaconXCustomUI/Classes/QuickSwitchCell/**'
-  end
-  
-  s.subspec 'DFUPage' do |ss|
-      ss.subspec 'Controller' do |sss|
-        sss.source_files = 'MKBeaconXCustomUI/Classes/DFUPage/Controller/**'
-        
-        sss.dependency 'MKBeaconXCustomUI/DFUPage/Model'
-        sss.dependency 'MKBeaconXCustomUI/DFUPage/Protocol'
-      end
-      ss.subspec 'Model' do |sss|
-        sss.source_files = 'MKBeaconXCustomUI/Classes/DFUPage/Model/**'
-        
-        sss.dependency 'MKBeaconXCustomUI/DFUPage/Protocol'
-      end
-      ss.subspec 'Protocol' do |sss|
-        sss.source_files = 'MKBeaconXCustomUI/Classes/DFUPage/Protocol/**'
-      end
-      
-      ss.dependency 'iOSDFULibrary'
   end
   
   s.subspec 'DeviceInfoPage' do |ss|
