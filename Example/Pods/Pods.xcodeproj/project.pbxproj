@@ -602,7 +602,7 @@
 		0037541F2282BAC4E4E9D194743644D0 /* MKBXScanInfoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXScanInfoCell.h; path = MKBeaconXCustomUI/Classes/ScanUI/ScanCell/ScanInfoCell/MKBXScanInfoCell.h; sourceTree = "<group>"; };
 		00418654B79378AB4AB3053DDCE3CCF6 /* MKMQTTGeneralParamsView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMQTTGeneralParamsView.m; path = MKCustomUIModule/Classes/MQTTServerView/GeneralParams/MKMQTTGeneralParamsView.m; sourceTree = "<group>"; };
 		0118E85361A1616CC303CE3C94124593 /* Pods-MKBeaconXCustomUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKBeaconXCustomUI_Example-umbrella.h"; sourceTree = "<group>"; };
-		05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MKBaseModuleLibrary.bundle; path = "MKBaseModuleLibrary-MKBaseModuleLibrary.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05CCF915CDB5CA9948F0AA95329FEBDB /* MKBaseModuleLibrary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKBaseModuleLibrary.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EE4CF5D02FF97F04899788CC208575 /* MKSettingTextCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKSettingTextCell.m; path = MKCustomUIModule/Classes/Cell/NormalCell/MKSettingTextCell/MKSettingTextCell.m; sourceTree = "<group>"; };
 		06D612B9F3FB7829DD4284D85331E77F /* MKMQTTUserCredentialsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMQTTUserCredentialsView.h; path = MKCustomUIModule/Classes/MQTTServerView/UserCredentials/MKMQTTUserCredentialsView.h; sourceTree = "<group>"; };
 		072EFAA1740DDBB2FD4EC7160E27AE5D /* MKBXSlotConfigInfoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXSlotConfigInfoCell.h; path = MKBeaconXCustomUI/Classes/SlotConfig/SlotConfigCell/DeviceInfoCell/MKBXSlotConfigInfoCell.h; sourceTree = "<group>"; };
@@ -649,7 +649,7 @@
 		190B72D52FD4940BB7A1B467C1FAA145 /* MKBXSlotConfigCellProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXSlotConfigCellProtocol.h; path = MKBeaconXCustomUI/Classes/SlotConfig/Protocol/MKBXSlotConfigCellProtocol.h; sourceTree = "<group>"; };
 		19699C0F06E20CA670AA31B596E24C86 /* MKRawAdvDataOperationCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKRawAdvDataOperationCell.m; path = MKCustomUIModule/Classes/Cell/LoRaCell/MKRawAdvDataOperationCell/MKRawAdvDataOperationCell.m; sourceTree = "<group>"; };
 		197E7628D2ED3BCB3E443D2EF6254D4B /* MJRefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJRefresh.release.xcconfig; sourceTree = "<group>"; };
-		19BCADB2B0CE5473D15A31FB747FFC28 /* MKBeaconXCustomUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MKBeaconXCustomUI.bundle; path = "MKBeaconXCustomUI-MKBeaconXCustomUI.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19BCADB2B0CE5473D15A31FB747FFC28 /* MKBeaconXCustomUI.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKBeaconXCustomUI.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2D6303CC1B1CE077207A2320EDF5C8 /* MKWifiAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKWifiAlertView.h; path = MKCustomUIModule/Classes/View/WifiAlertView/MKWifiAlertView.h; sourceTree = "<group>"; };
 		1AD0579CDA4C8FFA586DA352C75F6747 /* MKLoRaAdvancedSettingCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKLoRaAdvancedSettingCell.m; path = MKCustomUIModule/Classes/Cell/LoRaCell/MKAdvancedSettingCell/MKLoRaAdvancedSettingCell.m; sourceTree = "<group>"; };
 		1B12D3CC44A15950478BFBC2A3A631B0 /* UINavigationItem+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationItem+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UINavigationItem+MKAdd.h"; sourceTree = "<group>"; };
@@ -657,8 +657,8 @@
 		1D123B6B7DEF0D2CEBB8A87FF1CF4C15 /* MKMacroDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMacroDefines.h; path = MKBaseModuleLibrary/Classes/Defines/MKMacroDefines.h; sourceTree = "<group>"; };
 		1D656964073F83E481933E344E9EDF1C /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		1E24712363CB23C051825D4B9FADDF32 /* MKAboutController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKAboutController.h; path = MKCustomUIModule/Classes/Controller/MKAboutPage/Controller/MKAboutController.h; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		200899F54257AA98CD9D45EBA103F614 /* Pods_MKBeaconXCustomUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKBeaconXCustomUI_Example.framework; path = "Pods-MKBeaconXCustomUI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		200899F54257AA98CD9D45EBA103F614 /* Pods_MKBeaconXCustomUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBeaconXCustomUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20208466B24C1F988B7170D2ABCBA957 /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/UIView+Toast.h"; sourceTree = "<group>"; };
 		208480D05D5DBDF4645BF6E4500D1692 /* MKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKTextField.h; path = MKCustomUIModule/Classes/View/MKTextField/MKTextField.h; sourceTree = "<group>"; };
 		209DA744D42C1D9F0FFD3F58FE63F130 /* MKBXScanThreeASensorCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXScanThreeASensorCell.m; path = MKBeaconXCustomUI/Classes/ScanUI/ScanCell/ScanThreeASensorCell/MKBXScanThreeASensorCell.m; sourceTree = "<group>"; };
@@ -674,7 +674,7 @@
 		257497E5A16E7807F4818297FD61537B /* mk_bx_slotConfigUnselectedIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_bx_slotConfigUnselectedIcon@2x.png"; path = "MKBeaconXCustomUI/Assets/mk_bx_slotConfigUnselectedIcon@2x.png"; sourceTree = "<group>"; };
 		25878B38DD1B3F2B0BB86203BFE8629A /* MKBaseTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseTableView.m; path = MKBaseModuleLibrary/Classes/Base/View/tableView/MKBaseTableView.m; sourceTree = "<group>"; };
 		25E671DE5C463ECF6659B7A49FB5B2E2 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshAutoFooter.m; path = MJRefresh/Base/MJRefreshAutoFooter.m; sourceTree = "<group>"; };
-		2607EE853833050B3E9A5C78A8B0F771 /* MKBaseModuleLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKBaseModuleLibrary.framework; path = MKBaseModuleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2607EE853833050B3E9A5C78A8B0F771 /* MKBaseModuleLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKBaseModuleLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FB86A803B0EB807503C175B69A059C /* MKPageControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKPageControl.h; path = MKCustomUIModule/Classes/View/MKPageControl/MKPageControl.h; sourceTree = "<group>"; };
 		2765289B88AFACB68B6764E88E19C072 /* UIScrollView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UIScrollView+MKAdd.h"; sourceTree = "<group>"; };
 		27D08F935F82D189EFF62B9E9777378B /* MKAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKAlertController.h; path = MKCustomUIModule/Classes/Controller/MKAlertController/MKAlertController.h; sourceTree = "<group>"; };
@@ -690,7 +690,7 @@
 		2BA2308DC3B344E6D9DB14E40001329D /* MJRefreshTrailer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshTrailer.m; path = MJRefresh/Base/MJRefreshTrailer.m; sourceTree = "<group>"; };
 		2BBD15793BC8B062A1774E9895F38F0B /* MKTableSectionLineHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTableSectionLineHeader.m; path = MKCustomUIModule/Classes/View/MKTableSectionHeader/MKTableSectionLineHeader.m; sourceTree = "<group>"; };
 		2D10FA55C87E63F71BE5D926B5A1AE9E /* MKBXScanBeaconCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXScanBeaconCell.m; path = MKBeaconXCustomUI/Classes/ScanUI/ScanCell/ScanBeaconCell/MKBXScanBeaconCell.m; sourceTree = "<group>"; };
-		2D85C525F8CFD072F298B7B452B35D54 /* MKBeaconXCustomUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MKBeaconXCustomUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2D85C525F8CFD072F298B7B452B35D54 /* MKBeaconXCustomUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MKBeaconXCustomUI.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		2E7F715EF9C2C49160C15A33CACF7F01 /* mk_bx_batteryHighest@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_bx_batteryHighest@2x.png"; path = "MKBeaconXCustomUI/Assets/mk_bx_batteryHighest@2x.png"; sourceTree = "<group>"; };
 		2F11BB09C127FABFEB190A20527AFB56 /* MKSearchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKSearchButton.h; path = MKCustomUIModule/Classes/View/MKSearchButton/MKSearchButton.h; sourceTree = "<group>"; };
 		2FE1C3140D8DB12F41B5B0DE18BE6241 /* NSObject+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSObject+MKAdd.m"; sourceTree = "<group>"; };
@@ -745,14 +745,14 @@
 		4CFE7ADFEE56D26CD260F78B9F62299C /* MKMixedChoiceCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMixedChoiceCell.m; path = MKCustomUIModule/Classes/Cell/LoRaCell/MKMixedChoiceCell/MKMixedChoiceCell.m; sourceTree = "<group>"; };
 		4D163585B5BA34EF20469AD9F1DA923A /* MLInputDodger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MLInputDodger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D36A6F602E40C1DB9439AA21F29287A /* MKMeasureTxPowerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMeasureTxPowerCell.m; path = MKCustomUIModule/Classes/Cell/LoRaCell/MKMeasureTxPowerCell/MKMeasureTxPowerCell.m; sourceTree = "<group>"; };
-		4E1E57EFD1AE835E1CF6ABCEAD4724B0 /* MKBeaconXCustomUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKBeaconXCustomUI.framework; path = MKBeaconXCustomUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E1E57EFD1AE835E1CF6ABCEAD4724B0 /* MKBeaconXCustomUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKBeaconXCustomUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC12A3FE0E207D1C0745B2EF8EDD90F /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		4F199C2F8048E70A01C5F85D2C376B72 /* MKBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBaseViewController.m; path = MKBaseModuleLibrary/Classes/Base/Controller/MKBaseViewController.m; sourceTree = "<group>"; };
 		505223122D58AA4A0871209763150940 /* MKFilterRawAdvDataCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKFilterRawAdvDataCell.h; path = MKCustomUIModule/Classes/Cell/LoRaCell/MKFilterRawAdvDataCell/MKFilterRawAdvDataCell.h; sourceTree = "<group>"; };
 		53803A08B2B6A486E616878FAF536474 /* MKMixedChoiceCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKMixedChoiceCell.h; path = MKCustomUIModule/Classes/Cell/LoRaCell/MKMixedChoiceCell/MKMixedChoiceCell.h; sourceTree = "<group>"; };
 		53EC0C7805CF0EED63D5331D3DAA637C /* MLInputDodger.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MLInputDodger.bundle; path = Classes/MLInputDodger.bundle; sourceTree = "<group>"; };
 		5556619374A2B7AE653E03D21F65F6D0 /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
-		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast.framework; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		570CBB635496744D0D8606E0AB16DF1B /* mk_bx_clearButtonIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_bx_clearButtonIcon@3x.png"; path = "MKBeaconXCustomUI/Assets/mk_bx_clearButtonIcon@3x.png"; sourceTree = "<group>"; };
 		5776D0D383F94711588B2ADA33D7727A /* mk_customUI_goNextButton@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_goNextButton@3x.png"; path = "MKCustomUIModule/Assets/mk_customUI_goNextButton@3x.png"; sourceTree = "<group>"; };
 		57A0946874480E4D75143368ED2C1FC7 /* MJRefreshFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshFooter.m; path = MJRefresh/Base/MJRefreshFooter.m; sourceTree = "<group>"; };
@@ -789,7 +789,7 @@
 		6AEB26ECE7AEBC2F8175199B80E6E95C /* NSString+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSString+MKAdd.h"; sourceTree = "<group>"; };
 		6B4785462A308888D8A87CE7F44DC9C2 /* MJRefreshStateTrailer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateTrailer.h; path = MJRefresh/Custom/Trailer/MJRefreshStateTrailer.h; sourceTree = "<group>"; };
 		6C2AF23BAB4EA21CC6692A8112B67068 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		6C56A9BECB7B591175576FACBD50545D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6C56A9BECB7B591175576FACBD50545D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6C64652BA579EF060390B71B7FC6E75A /* MKSearchConditionsView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKSearchConditionsView.h; path = MKCustomUIModule/Classes/View/MKSearchConditionsView/MKSearchConditionsView.h; sourceTree = "<group>"; };
 		6D06E5EF1A0F3F4FC52E94D2E1361C89 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		6DB064315A456EB368A1A13E0F9EDB10 /* MKBXEnumerateDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXEnumerateDefine.h; path = MKBeaconXCustomUI/Classes/Defines/MKBXEnumerateDefine.h; sourceTree = "<group>"; };
@@ -817,8 +817,8 @@
 		775BDF15B2ED95B7A2E31AD2B32329A9 /* mk_customUI_deviceTypeUnselectedIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_deviceTypeUnselectedIcon@3x.png"; path = "MKCustomUIModule/Assets/mk_customUI_deviceTypeUnselectedIcon@3x.png"; sourceTree = "<group>"; };
 		781544DDF3147C8509C74166E1602180 /* MKMQTTSSLCertificateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKMQTTSSLCertificateView.m; path = MKCustomUIModule/Classes/MQTTServerView/SSL/MKMQTTSSLCertificateView.m; sourceTree = "<group>"; };
 		782C7384D9DE498F06D6630A91CA2D89 /* CircleProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CircleProgressBar.modulemap; sourceTree = "<group>"; };
-		7948FA343D314AE2DEBBA7CA6076F151 /* CircleProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircleProgressBar.framework; path = CircleProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		795D65D255D403824054D0CBE90E32B9 /* MKCustomUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKCustomUIModule.framework; path = MKCustomUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7948FA343D314AE2DEBBA7CA6076F151 /* CircleProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircleProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		795D65D255D403824054D0CBE90E32B9 /* MKCustomUIModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKCustomUIModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B6F477E1DA578080457D47C6EA81D1 /* NSNumber+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSNumber+MKAdd.m"; sourceTree = "<group>"; };
 		7A4268ECF561E24749A4751643B937BE /* MLInputDodger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MLInputDodger-Info.plist"; sourceTree = "<group>"; };
 		7A6993C6D630CA89379EEBC8897AAB7F /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
@@ -856,7 +856,7 @@
 		89A372EF96F7251AFECBA70DC941511A /* WRNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WRNavigationBar.h; path = Demo/CodeDemo/WRNavigationBar/WRNavigationBar.h; sourceTree = "<group>"; };
 		8A398D1B7E69124651E6AF9D85CB85F3 /* NSNumber+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSNumber+MKAdd.h"; sourceTree = "<group>"; };
 		8AD4A55690B967F4B9CDC3794CDEA5DA /* ResourceBundle-MKCustomUIModule-MKCustomUIModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MKCustomUIModule-MKCustomUIModule-Info.plist"; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C712AF2CE93AB9772C0B365CBA5B6EE /* NSDate+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSDate+MKAdd.m"; sourceTree = "<group>"; };
 		8C95347BF20AF32CE781F9AAC60C9598 /* UISegmentedControl+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UISegmentedControl+MKAdd.h"; sourceTree = "<group>"; };
 		8D639B3870FC58DA6F6C5AFE675A9E10 /* MKBXTriggerHumidityView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXTriggerHumidityView.m; path = MKBeaconXCustomUI/Classes/SlotConfig/TriggerView/MKBXTriggerHumidityView.m; sourceTree = "<group>"; };
@@ -887,7 +887,7 @@
 		9BD4A199712D110F4C9F07E7E19FF791 /* MKBXSlotFrameTypePickView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXSlotFrameTypePickView.m; path = MKBeaconXCustomUI/Classes/SlotConfig/FrameTypePickView/MKBXSlotFrameTypePickView.m; sourceTree = "<group>"; };
 		9CBC46E241DBE31EAF60C4E0E0E48C21 /* MKBXQuickSwitchCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXQuickSwitchCell.h; path = MKBeaconXCustomUI/Classes/QuickSwitchCell/MKBXQuickSwitchCell.h; sourceTree = "<group>"; };
 		9D6C7B0D5F0AF108AB990375BC9C7C28 /* Pods-MKBeaconXCustomUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKBeaconXCustomUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DD9900C10C93CA4AB6D8A8F306EA4BE /* mk_customUI_telIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_telIcon@3x.png"; path = "MKCustomUIModule/Assets/mk_customUI_telIcon@3x.png"; sourceTree = "<group>"; };
 		9E9AC8A7EBD8E00E6D09D5DD80A97962 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		A000C7969B9CB1E5901223A9C6DB23FB /* mk_customUI_listButtonUnselectedIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_listButtonUnselectedIcon@3x.png"; path = "MKCustomUIModule/Assets/mk_customUI_listButtonUnselectedIcon@3x.png"; sourceTree = "<group>"; };
@@ -948,7 +948,7 @@
 		C167AFB7A40D07438E9A5F58E4CAA4CE /* UITableView+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/UITableView+MKAdd.h"; sourceTree = "<group>"; };
 		C267C738B94C1539DFAE5E850F5C90A1 /* MKModuleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKModuleManager.h; path = MKBaseModuleLibrary/Classes/Tools/MKModuleManager/MKModuleManager.h; sourceTree = "<group>"; };
 		C28EBD0E560AF8D2CDC19EF61CB69B36 /* mk_customUI_subIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_subIcon@3x.png"; path = "MKCustomUIModule/Assets/mk_customUI_subIcon@3x.png"; sourceTree = "<group>"; };
-		C291AC0DBEA2986CD250F2466A26691D /* MLInputDodger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MLInputDodger.framework; path = MLInputDodger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C291AC0DBEA2986CD250F2466A26691D /* MLInputDodger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MLInputDodger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4160347893998FDB10B434EDD303F91 /* MKNormalTextCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKNormalTextCell.m; path = MKCustomUIModule/Classes/Cell/NormalCell/MKNormalTextCell/MKNormalTextCell.m; sourceTree = "<group>"; };
 		C445DC42201357133D763A5EAD463299 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackGifFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
 		C4713161C1860A6339F3653808BA2789 /* mk_bx_batteryHighest@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_bx_batteryHighest@3x.png"; path = "MKBeaconXCustomUI/Assets/mk_bx_batteryHighest@3x.png"; sourceTree = "<group>"; };
@@ -980,7 +980,7 @@
 		D0C0B453B3B45982DFB9B9A4804BE800 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		D17360B7D9CAF32EB61A02F498578E98 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshStateHeader.h; path = MJRefresh/Custom/Header/MJRefreshStateHeader.h; sourceTree = "<group>"; };
 		D1F25270BAB9BA3B4C4CABA4E0B08B84 /* WRCustomNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WRCustomNavigationBar.h; path = Demo/CodeDemo/WRNavigationBar/WRCustomNavigationBar.h; sourceTree = "<group>"; };
-		D299E571E016B9E6B94A53EE5C782D2B /* MKCustomUIModule.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = MKCustomUIModule.bundle; path = "MKCustomUIModule-MKCustomUIModule.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D299E571E016B9E6B94A53EE5C782D2B /* MKCustomUIModule.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKCustomUIModule.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DDC9E91A15561CD9F8CA5A2A601406 /* Toast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Info.plist"; sourceTree = "<group>"; };
 		D2E602A6E20BB01A1A7B613337C73AB7 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
 		D2FD673C71CE1C521B99DC3FE2656156 /* MKTextFieldCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKTextFieldCell.m; path = MKCustomUIModule/Classes/Cell/NormalCell/MKTextFieldCell/MKTextFieldCell.m; sourceTree = "<group>"; };
@@ -1006,7 +1006,7 @@
 		DDA2B37F4AAE7B3467FBA00393724E50 /* mk_customUI_telIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_telIcon@2x.png"; path = "MKCustomUIModule/Assets/mk_customUI_telIcon@2x.png"; sourceTree = "<group>"; };
 		DE84B4073F97361146A538B3A6138273 /* UIButton+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIButton+MKAdd.m"; sourceTree = "<group>"; };
 		DE8E4736FEEF7377F2B51136F1EF3F47 /* CircleProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircleProgressBar-prefix.pch"; sourceTree = "<group>"; };
-		DF1910F703AB9A9A05DDD9333F8D0EF9 /* WRNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WRNavigationBar.framework; path = WRNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1910F703AB9A9A05DDD9333F8D0EF9 /* WRNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WRNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE3DE07E68B38F32671280A52E8AE56 /* MKBXScanHTCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXScanHTCell.h; path = MKBeaconXCustomUI/Classes/ScanUI/ScanCell/ScanHTCell/MKBXScanHTCell.h; sourceTree = "<group>"; };
 		DFFFD4B7FCD530DEDB4D0FED716082CD /* UIColor+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/UIColor+MKAdd.m"; sourceTree = "<group>"; };
 		E2199A8E30DA4C072A39EE38E601CBF6 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
@@ -1014,7 +1014,7 @@
 		E33A53DC2F4810479805E4CCA921B876 /* WRNavigationBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WRNavigationBar.release.xcconfig; sourceTree = "<group>"; };
 		E36E8F7017BCB0CE78162447949C531C /* NSData+MKAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+MKAdd.m"; path = "MKBaseModuleLibrary/Classes/Category/NSData+MKAdd.m"; sourceTree = "<group>"; };
 		E45611A46BEB8FC8F1B3B2AF94DBC40B /* MKBeaconXCustomUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKBeaconXCustomUI-dummy.m"; sourceTree = "<group>"; };
-		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E576C6FB91E726D460F3C771ED723224 /* MKBXSlotConfigURLCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKBXSlotConfigURLCell.h; path = MKBeaconXCustomUI/Classes/SlotConfig/SlotConfigCell/URLCell/MKBXSlotConfigURLCell.h; sourceTree = "<group>"; };
 		E590FE44EA318E64A31F518DB0A59CAF /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackNormalFooter.h; path = MJRefresh/Custom/Footer/Back/MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
 		E5CE77A990CE4CA38E86AF840C401305 /* NSArray+MKAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MKAdd.h"; path = "MKBaseModuleLibrary/Classes/Category/NSArray+MKAdd.h"; sourceTree = "<group>"; };
@@ -1051,7 +1051,7 @@
 		F35D38BECE00D7448A663A6C6BB8CE94 /* MKBXSlotConfigURLCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKBXSlotConfigURLCell.m; path = MKBeaconXCustomUI/Classes/SlotConfig/SlotConfigCell/URLCell/MKBXSlotConfigURLCell.m; sourceTree = "<group>"; };
 		F377AD0D601D52DD6EC704FAA84BE702 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		F3A99888C0D128A28CDA0209709081C7 /* mk_customUI_keyboardDelIcon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_keyboardDelIcon@3x.png"; path = "MKCustomUIModule/Assets/mk_customUI_keyboardDelIcon@3x.png"; sourceTree = "<group>"; };
-		F3F07CF486C642304DE84D1A1F8D7447 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F3F07CF486C642304DE84D1A1F8D7447 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F4D7547DC9404F57C6D3B496699D1E49 /* mk_customUI_addUsIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_addUsIcon@2x.png"; path = "MKCustomUIModule/Assets/mk_customUI_addUsIcon@2x.png"; sourceTree = "<group>"; };
 		F510CF7470D6D4A5E1C7CCD202FA2001 /* mk_customUI_sliderThumbIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_sliderThumbIcon@2x.png"; path = "MKCustomUIModule/Assets/mk_customUI_sliderThumbIcon@2x.png"; sourceTree = "<group>"; };
 		F54FE184C39F1222DED39660A3597B72 /* mk_customUI_deviceTypeUnselectedIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "mk_customUI_deviceTypeUnselectedIcon@2x.png"; path = "MKCustomUIModule/Assets/mk_customUI_deviceTypeUnselectedIcon@2x.png"; sourceTree = "<group>"; };
@@ -1218,7 +1218,6 @@
 				BB7203AD12036F7691D839FA39066031 /* WRNavigationBar.m */,
 				99F561D18C0312A26758268F9E0380FF /* Support Files */,
 			);
-			name = WRNavigationBar;
 			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
@@ -1265,7 +1264,6 @@
 				41A0FA7E12F93126DF3AE677BD38E476 /* UIView+Toast.m */,
 				45C1715AA3B87B64FDE59C550EACBCB6 /* Support Files */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -1639,7 +1637,6 @@
 				F2EF10712812D17CC19200ED74FA2BEF /* MBProgressHUD.m */,
 				99161B551BCD452B1DB096290B66DE4E /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1881,7 +1878,6 @@
 				243E99AB1C8673043BC1AA0DC7E011DC /* Resources */,
 				E10E24F874BA43C2E1525747C233A1C2 /* Support Files */,
 			);
-			name = MLInputDodger;
 			path = MLInputDodger;
 			sourceTree = "<group>";
 		};
@@ -2109,7 +2105,6 @@
 				AC46CD5754190755153206CA55684529 /* Support Files */,
 				85BA92DB3F98C78088E0C48BB75B41AA /* Tools */,
 			);
-			name = MKBaseModuleLibrary;
 			path = MKBaseModuleLibrary;
 			sourceTree = "<group>";
 		};
@@ -2152,7 +2147,6 @@
 				CFDBFBB23B26A41591FB883D9AF59C3F /* ViewController+MASAdditions.m */,
 				3F51802ECC7308A881454B9938024F10 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -2269,7 +2263,6 @@
 				97DFFA9FF5ABFAFBCDDF1498840EAE94 /* Resources */,
 				811399CD800366405E0539062F2D241F /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -2449,7 +2442,6 @@
 				7D0DEF022D27D87F818A512F238D3EA4 /* UIAdopter */,
 				9D371DC995F16F792F1061C36C1BB335 /* View */,
 			);
-			name = MKCustomUIModule;
 			path = MKCustomUIModule;
 			sourceTree = "<group>";
 		};
@@ -2519,7 +2511,6 @@
 				D85F219224555CCF381E27CFB26FE93C /* CircleProgressBar.m */,
 				3AE7012FE7EC22F915DF3CBF380A6765 /* Support Files */,
 			);
-			name = CircleProgressBar;
 			path = CircleProgressBar;
 			sourceTree = "<group>";
 		};
@@ -4359,8 +4350,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
