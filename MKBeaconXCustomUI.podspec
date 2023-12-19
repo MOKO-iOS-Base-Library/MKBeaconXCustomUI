@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKBeaconXCustomUI'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'BXP系列app的组件库'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/MOKO-iOS-Base-Library/MKBeaconXCustomUI.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '14.0'
   
   s.resource_bundles = {
     'MKBeaconXCustomUI' => ['MKBeaconXCustomUI/Assets/*.png']

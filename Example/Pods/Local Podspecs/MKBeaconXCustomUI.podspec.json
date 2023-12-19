@@ -1,6 +1,6 @@
 {
   "name": "MKBeaconXCustomUI",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "summary": "BXP系列app的组件库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/MOKO-iOS-Base-Library/MKBeaconXCustomUI",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/MOKO-iOS-Base-Library/MKBeaconXCustomUI.git",
-    "tag": "1.0.5"
+    "tag": "1.0.7"
   },
   "platforms": {
-    "ios": "12.0"
+    "ios": "14.0"
   },
   "resource_bundles": {
     "MKBeaconXCustomUI": [

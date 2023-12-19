@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00CF26C92B317C160044EE93 /* MKBXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF26C82B317C160044EE93 /* MKBXViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00CF26C72B317C160044EE93 /* MKBXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKBXViewController.h; sourceTree = "<group>"; };
+		00CF26C82B317C160044EE93 /* MKBXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKBXViewController.m; sourceTree = "<group>"; };
 		2CC15C1AA6E5A8531F27FC00 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MKBeaconXCustomUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKBeaconXCustomUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,7 +58,7 @@
 		68532DA4126FD4AE3DC8D428 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAD8F4CA9E70E0DA04FE8FE7 /* Pods_MKBeaconXCustomUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKBeaconXCustomUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAE383ABBEDBFC5D1C68C5E9 /* MKBeaconXCustomUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MKBeaconXCustomUI.podspec; path = ../MKBeaconXCustomUI.podspec; sourceTree = "<group>"; };
+		BAE383ABBEDBFC5D1C68C5E9 /* MKBeaconXCustomUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MKBeaconXCustomUI.podspec; path = ../MKBeaconXCustomUI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BBC3A4995108C8B1D6403A3B /* Pods-MKBeaconXCustomUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKBeaconXCustomUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-MKBeaconXCustomUI_Example/Pods-MKBeaconXCustomUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CB18A58A34CFF3B13467EC81 /* Pods-MKBeaconXCustomUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKBeaconXCustomUI_Example.release.xcconfig"; path = "Target Support Files/Pods-MKBeaconXCustomUI_Example/Pods-MKBeaconXCustomUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +91,8 @@
 		006EE32326C2793F00D8A976 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				00CF26C72B317C160044EE93 /* MKBXViewController.h */,
+				00CF26C82B317C160044EE93 /* MKBXViewController.m */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -324,8 +329,10 @@
 				"${BUILT_PRODUCTS_DIR}/MKCustomUIModule/MKCustomUIModule.framework",
 				"${BUILT_PRODUCTS_DIR}/MLInputDodger/MLInputDodger.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
 				"${BUILT_PRODUCTS_DIR}/WRNavigationBar/WRNavigationBar.framework",
+				"${BUILT_PRODUCTS_DIR}/libxlsxwriter/xlsxwriter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -337,8 +344,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKCustomUIModule.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLInputDodger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WRNavigationBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xlsxwriter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -352,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CF26C92B317C160044EE93 /* MKBXViewController.m in Sources */,
 				6003F59E195388D20070C39A /* MKAppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -451,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -499,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -516,7 +526,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKBeaconXCustomUI/MKBeaconXCustomUI-Prefix.pch";
 				INFOPLIST_FILE = "MKBeaconXCustomUI/MKBeaconXCustomUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
@@ -537,7 +547,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKBeaconXCustomUI/MKBeaconXCustomUI-Prefix.pch";
 				INFOPLIST_FILE = "MKBeaconXCustomUI/MKBeaconXCustomUI-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
