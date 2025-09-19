@@ -247,7 +247,12 @@ static CGFloat const batteryIconHeight = 25.f;
     NSString *macAddress = (ValidStr(_dataModel.macAddress) ? _dataModel.macAddress : @"N/A");
     self.macLabel.text = [NSString stringWithFormat:@"MAC:%@",macAddress];
     self.batteryLabel.text = (ValidStr(_dataModel.battery) ? [_dataModel.battery stringByAppendingString:@"mV"] : @"N/A");
-    self.tamperLabel.text = (_dataModel.tamperAlert ? @"Tamper alert" : @"Tamper normal");
+    if (_dataModel.tamperSensor) {
+        self.tamperLabel.text = (_dataModel.tamperAlert ? @"Tamper alert" : @"Tamper normal");
+    }else {
+        self.tamperLabel.text = @"";
+    }
+    
     [self setNeedsLayout];
 }
 
