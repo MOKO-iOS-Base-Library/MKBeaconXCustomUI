@@ -1,0 +1,1 @@
+#import "../SlotAdopter/MKBXSlotDataAdopter.h"
