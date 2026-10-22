@@ -5,4 +5,4 @@
 //  SPM 公共头转发。
 //
 
-#import "ScanUI/ScanCell/ScanTLMCell/MKBXScanTLMCell.h"
+#import "../ScanUI/ScanCell/ScanTLMCell/MKBXScanTLMCell.h"
