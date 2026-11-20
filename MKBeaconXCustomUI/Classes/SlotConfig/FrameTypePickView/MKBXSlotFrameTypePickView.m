@@ -169,7 +169,7 @@
 - (UIImageView *)leftIcon{
     if (!_leftIcon) {
         _leftIcon = [[UIImageView alloc] init];
-        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotFrameTypePickView", @"mk_bx_slotFrameType.png");
+        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotFrameTypePickView", @"mk_bx_slotFrameType@2x.png");
     }
     return _leftIcon;
 }

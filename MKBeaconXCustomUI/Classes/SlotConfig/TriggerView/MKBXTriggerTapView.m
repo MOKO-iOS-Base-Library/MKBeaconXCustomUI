@@ -340,9 +340,9 @@
 }
 
 - (void)updateSelectedIcon {
-    self.icon1.image = (self.index == 0) ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigSelectedIcon.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon.png");
-    self.icon2.image = (self.index == 1) ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigSelectedIcon.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon.png");
-    self.icon4.image = (self.index == 2) ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigSelectedIcon.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon.png");
+    self.icon1.image = (self.index == 0) ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigSelectedIcon@2x.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon@2x.png");
+    self.icon2.image = (self.index == 1) ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigSelectedIcon@2x.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon@2x.png");
+    self.icon4.image = (self.index == 2) ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigSelectedIcon@2x.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon@2x.png");
 }
 
 #pragma mark - setter & getter
@@ -350,7 +350,7 @@
 - (UIImageView *)icon1 {
     if (!_icon1) {
         _icon1 = [[UIImageView alloc] init];
-        _icon1.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigSelectedIcon.png");
+        _icon1.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigSelectedIcon@2x.png");
     }
     return _icon1;
 }
@@ -358,7 +358,7 @@
 - (UIImageView *)icon2 {
     if (!_icon2) {
         _icon2 = [[UIImageView alloc] init];
-        _icon2.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon.png");
+        _icon2.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon@2x.png");
     }
     return _icon2;
 }
@@ -366,7 +366,7 @@
 - (UIImageView *)icon4 {
     if (!_icon4) {
         _icon4 = [[UIImageView alloc] init];
-        _icon4.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon.png");
+        _icon4.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTapView", @"mk_bx_slotConfigUnselectedIcon@2x.png");
     }
     return _icon4;
 }

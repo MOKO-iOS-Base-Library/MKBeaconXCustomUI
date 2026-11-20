@@ -745,7 +745,7 @@ MKBXTriggerTapViewDelegate>
 }
 
 - (void)updateSwitchButtonIcon {
-    UIImage *icon = (self.switchButton.selected ? LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchSelectedIcon.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchUnselectedIcon.png"));
+    UIImage *icon = (self.switchButton.selected ? LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchSelectedIcon@2x.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchUnselectedIcon@2x.png"));
     [self.switchButton setImage:icon forState:UIControlStateNormal];
 }
 
@@ -895,7 +895,7 @@ MKBXTriggerTapViewDelegate>
 - (UIImageView *)leftIcon {
     if (!_leftIcon) {
         _leftIcon = [[UIImageView alloc] init];
-        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_slotParamsTriggerIcon.png");
+        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_slotParamsTriggerIcon@2x.png");
     }
     return _leftIcon;
 }
@@ -914,7 +914,7 @@ MKBXTriggerTapViewDelegate>
 - (UIButton *)switchButton {
     if (!_switchButton) {
         _switchButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_switchButton setImage:LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchUnselectedIcon.png") forState:UIControlStateNormal];
+        [_switchButton setImage:LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigTriggerCell", @"mk_bx_switchUnselectedIcon@2x.png") forState:UIControlStateNormal];
         [_switchButton addTarget:self
                           action:@selector(switchButtonPressed)
                 forControlEvents:UIControlEventTouchUpInside];

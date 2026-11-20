@@ -166,8 +166,8 @@
 }
 
 - (void)updateSlectedIcon {
-    self.startIcon.image = (self.start ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigSelectedIcon.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigUnselectedIcon.png"));
-    self.stopIcon.image = (self.start ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigUnselectedIcon.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigSelectedIcon.png"));
+    self.startIcon.image = (self.start ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigSelectedIcon@2x.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigUnselectedIcon@2x.png"));
+    self.stopIcon.image = (self.start ? LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigUnselectedIcon@2x.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigSelectedIcon@2x.png"));
 }
 
 #pragma mark - getter
@@ -205,7 +205,7 @@
 - (UIImageView *)startIcon {
     if (!_startIcon) {
         _startIcon = [[UIImageView alloc] init];
-        _startIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigSelectedIcon.png");
+        _startIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigSelectedIcon@2x.png");
     }
     return _startIcon;
 }
@@ -222,7 +222,7 @@
 - (UIImageView *)stopIcon {
     if (!_stopIcon) {
         _stopIcon = [[UIImageView alloc] init];
-        _stopIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigUnselectedIcon.png");
+        _stopIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXTriggerTemperatureView", @"mk_bx_slotConfigUnselectedIcon@2x.png");
     }
     return _stopIcon;
 }
