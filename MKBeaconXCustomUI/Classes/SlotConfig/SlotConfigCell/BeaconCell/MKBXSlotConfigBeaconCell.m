@@ -187,7 +187,7 @@
 - (UIImageView *)leftIcon{
     if (!_leftIcon) {
         _leftIcon = [[UIImageView alloc] init];
-        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigBeaconCell", @"mk_bx_slotAdvContent@2x.png");
+        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXSlotConfigBeaconCell", @"mk_bx_slotAdvContent.png");
     }
     return _leftIcon;
 }

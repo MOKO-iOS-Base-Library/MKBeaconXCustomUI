@@ -145,7 +145,7 @@
 - (UIImageView *)searchIcon{
     if (!_searchIcon) {
         _searchIcon = [[UIImageView alloc] init];
-        _searchIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanSearchButton", @"mk_bx_searchGrayIcon@2x.png");
+        _searchIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanSearchButton", @"mk_bx_searchGrayIcon.png");
     }
     return _searchIcon;
 }
@@ -174,7 +174,7 @@
 - (UIButton *)clearButton{
     if (!_clearButton) {
         _clearButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_clearButton setImage:LOADICON(@"MKBeaconXCustomUI", @"MKBXScanSearchButton", @"mk_bx_clearButtonIcon@2x.png") forState:UIControlStateNormal];
+        [_clearButton setImage:LOADICON(@"MKBeaconXCustomUI", @"MKBXScanSearchButton", @"mk_bx_clearButtonIcon.png") forState:UIControlStateNormal];
         [_clearButton addTarget:self
                          action:@selector(clearButtonPressed)
                forControlEvents:UIControlEventTouchUpInside];

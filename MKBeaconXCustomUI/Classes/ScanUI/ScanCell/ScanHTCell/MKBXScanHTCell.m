@@ -166,7 +166,7 @@ static CGFloat const msgLabelWidth = 100.f;
 - (UIImageView *)leftIcon{
     if (!_leftIcon) {
         _leftIcon = [[UIImageView alloc] init];
-        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanHTCell", @"mk_bx_littleBluePoint@2x.png");
+        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanHTCell", @"mk_bx_littleBluePoint.png");
     }
     return _leftIcon;
 }

@@ -130,7 +130,7 @@ static CGFloat const switchButtonHeight = 30.f;
 
 #pragma mark - private method
 - (void)updateSwitchButtonIcon {
-    UIImage *image = (self.switchButton.selected ? LOADICON(@"MKBeaconXCustomUI", @"MKBXQuickSwitchCell", @"mk_bx_switchSelectedIcon@2x.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXQuickSwitchCell", @"mk_bx_switchUnselectedIcon@2x.png"));
+    UIImage *image = (self.switchButton.selected ? LOADICON(@"MKBeaconXCustomUI", @"MKBXQuickSwitchCell", @"mk_bx_switchSelectedIcon.png") : LOADICON(@"MKBeaconXCustomUI", @"MKBXQuickSwitchCell", @"mk_bx_switchUnselectedIcon.png"));
     [self.switchButton setImage:image forState:UIControlStateNormal];
     UIColor *statusColor = (self.switchButton.selected ? NAVBAR_COLOR_MACROS : UIColorFromRGB(0xcccccc));
     self.switchStatusLabel.textColor = statusColor;

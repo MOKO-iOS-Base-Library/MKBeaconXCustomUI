@@ -317,7 +317,7 @@ static CGFloat const leftIconHeight = 7.f;
 - (UIImageView *)leftIcon{
     if (!_leftIcon) {
         _leftIcon = [[UIImageView alloc] init];
-        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanThreeASensorCell", @"mk_bx_littleBluePoint@2x.png");
+        _leftIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanThreeASensorCell", @"mk_bx_littleBluePoint.png");
     }
     return _leftIcon;
 }

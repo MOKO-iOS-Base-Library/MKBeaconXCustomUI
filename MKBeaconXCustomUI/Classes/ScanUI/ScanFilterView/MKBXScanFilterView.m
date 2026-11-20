@@ -294,7 +294,7 @@ static NSString *const noteMsg2 = @"* There is an “OR“ relationship between 
                                                                     singalIconPostion_Y,
                                                                     signalIconWidth,
                                                                     signalIconHeight)];
-        _signalIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanFilterView", @"mk_bx_wifiSignalIcon@2x.png");
+        _signalIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanFilterView", @"mk_bx_wifiSignalIcon.png");
     }
     return _signalIcon;
 }
@@ -323,7 +323,7 @@ static NSString *const noteMsg2 = @"* There is an “OR“ relationship between 
                                                                         singalIconPostion_Y,
                                                                     signalIconWidth,
                                                                     signalIconHeight)];
-        _graySignalIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanFilterView", @"mk_bx_wifiGraySignalIcon@2x.png");
+        _graySignalIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanFilterView", @"mk_bx_wifiGraySignalIcon.png");
     }
     return _graySignalIcon;
 }

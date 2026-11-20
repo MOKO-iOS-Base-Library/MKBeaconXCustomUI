@@ -260,7 +260,7 @@ static CGFloat const batteryIconHeight = 25.f;
 - (UIImageView *)rssiIcon{
     if (!_rssiIcon) {
         _rssiIcon = [[UIImageView alloc] init];
-        _rssiIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanInfoCell", @"mk_bx_signalIcon@2x.png");
+        _rssiIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanInfoCell", @"mk_bx_signalIcon.png");
     }
     return _rssiIcon;
 }
@@ -299,7 +299,7 @@ static CGFloat const batteryIconHeight = 25.f;
 - (UIImageView *)batteryIcon{
     if (!_batteryIcon) {
         _batteryIcon = [[UIImageView alloc] init];
-        _batteryIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanInfoCell", @"mk_bx_batteryHighest@2x.png");
+        _batteryIcon.image = LOADICON(@"MKBeaconXCustomUI", @"MKBXScanInfoCell", @"mk_bx_batteryHighest.png");
     }
     return _batteryIcon;
 }
